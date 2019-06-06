@@ -9,10 +9,9 @@ public class Univ_Elevator {
 	int returnedFloor = currentFloor;
 
 	// Method to be executed when called
-	// Method to be executed when called
 	int Direction(int toFloor) { // toFloor is a variable to pass parameters into when method is called. Use
-									// scanner for parameters. This loop always returns the elevator to the basement
-									// level.
+	                            // scanner for parameters. This loop always returns the elevator to the basement level.
+								
 
 		if ((toFloor > currentFloor) && (toFloor < 2))
 
@@ -20,16 +19,14 @@ public class Univ_Elevator {
 
 			u(); // calling another method of the class
 
-		} 
-		else {
+		} else {
 			u2();
 		}
 
 		if ((toFloor < currentFloor) && (toFloor > 0)) {
 			d();
 
-		} 
-		else {
+		} else {
 			d2();
 		}
 
@@ -37,7 +34,7 @@ public class Univ_Elevator {
 
 	}
 
-	void up() { 
+	void up() {
 		if (currentFloor < 2) {
 			currentFloor++;
 			System.out.println("Going to the,,, " + currentFloor + " floor");
@@ -48,7 +45,7 @@ public class Univ_Elevator {
 		}
 	}
 
-	void openDoor() { 
+	void openDoor() {
 		isOpen = true;
 		System.out.println("Door is opening");
 
@@ -75,7 +72,8 @@ public class Univ_Elevator {
 		System.out.println("Door is closing");
 	}
 
-	public void u() { // method to be used in 'main' which calls the local method up() which has the 'mecanica'
+	public void u() { // method to be used in 'main' which calls the local method up() which has the 'mecánica'
+						
 		up();
 		openDoor();
 		closeDoor();
